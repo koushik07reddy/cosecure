@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: justify;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#header {
+  background: url('./assets/images/background-radient.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 600px;
+}
+
+.height-auto {
+  height: 300px;
+}
+
+.shadow-effect {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.text-blue {
+  color: aqua;
+}
+
+.fluid {
+  width: 100%;
+}
+
+.admin {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(to top right, rgb(0, 238, 255), rgb(17, 0, 255));
+}
+
+/* Spinner */
+.spinner{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(255,255,255,0.5);
+  z-index:99999;
+  display:block;
+}
+
+.lds-hourglass {
+  display: inline-block;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  top: 50vh;
+  left: 50vw;
+  z-index:99999;
+}
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 32px solid red;
+  border-color: pink transparent pink transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+
+@media only screen and (max-width: 800px)  {
+  h2{
+      font-size: 2rem;
+  }
+  
+}
